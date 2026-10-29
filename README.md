@@ -1,2 +1,2 @@
-# galaxy-shooter-privacy-policy-
-galaxy shooter privacy policy 
+# privacy-policy-
+privacy policy 
