@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — H-Git by Hexsoft</title>
+  <style>
+    :root {
+      --bg: #060910;
+      --surface: #0d121d;
+      --card: #121a2a;
+      --border: #22304a;
+      --accent: #2979ff;
+      --cyan: #00e5ff;
+      --text: #ecf2fc;
+      --muted: #8ea0bc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px 64px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(41, 121, 255, 0.15);
+      border: 1px solid var(--accent);
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 19px;
+      color: #6ea8fe;
+    }
+    p, li { color: #d4dfef; font-size: 15px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    code {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--cyan);
+    }
+    a { color: #6ea8fe; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="badge">Hexsoft &bull; Privacy Policy</div>
+      <h1>Privacy Policy for H-Git</h1>
+      <div class="meta">
+        Effective Date: November 23, 2026 &nbsp;|&nbsp;
+        Package: <code>com.hexsoft.hgit</code> &nbsp;|&nbsp;
+        Contact: <a href="mailto:hexsoft.support@gmail.com">hexsoft.support@gmail.com</a>
+      </div>
+    </header>
+
+    <h2>1. Overview</h2>
+    <p>H-Git is a native Android Git client developed by <strong>Hexsoft</strong>. Your privacy is fundamental to our design. H-Git operates directly on your device, contains <strong>no advertisements</strong>, <strong>no analytics SDKs</strong>, <strong>no crash-reporting trackers</strong>, and <strong>does not transmit your personal data to Hexsoft servers</strong>.</p>
+
+    <h2>2. Information Stored Locally on Your Device</h2>
+    <p>All data created or imported in H-Git is stored exclusively in your device's private app storage:</p>
+    <ul>
+      <li><strong>Git Repositories &amp; Source Files:</strong> Cloned or initialized repositories reside locally on your device.</li>
+      <li><strong>Credentials &amp; SSH Keys:</strong> Your optional GitHub username, Personal Access Token (PAT), and repository passwords are encrypted at rest using the hardware-backed <strong>Android KeyStore (AES-256-GCM)</strong>. SSH private keys are stored privately inside the app's sandboxed storage.</li>
+      <li><strong>Git Profile &amp; App Preferences:</strong> Your configured Git author name, commit email, and UI preferences are stored locally via Android SharedPreferences.</li>
+    </ul>
+    <p>You can erase all saved credentials at any time via <strong>Settings &rarr; Clear Saved Credentials</strong>, or remove all local data by uninstalling the app.</p>
+
+    <h2>3. User-Initiated Network Connections</h2>
+    <p>H-Git only accesses the network when you explicitly initiate an action:</p>
+    <ul>
+      <li><strong>Git Remote Operations:</strong> When you clone, fetch, pull, or push, H-Git connects directly via HTTPS or SSH to the Git hosting server you configured (such as GitHub, GitLab, Bitbucket, or a self-hosted Git server).</li>
+      <li><strong>Optional GitHub Token Test:</strong> If you tap <strong>Test Token</strong> in Settings, H-Git sends your Personal Access Token directly over HTTPS to <code>https://api.github.com/user</code> to verify authentication.</li>
+      <li><strong>Optional Gravatar Avatars:</strong> If <strong>Use Gravatar images</strong> is enabled in Settings, H-Git sends an MD5 hash of commit author email addresses to <code>https://www.gravatar.com</code> to display author avatars. You may toggle this off at any time.</li>
+    </ul>
+
+    <h2>4. Data Sharing, Sale &amp; Third-Party SDKs</h2>
+    <ul>
+      <li>Hexsoft does <strong>not</strong> collect, store, sell, rent, or share any user data with third parties.</li>
+      <li>H-Git contains <strong>no</strong> advertising networks, analytics libraries, or crash-reporting trackers.</li>
+      <li>H-Git explicitly removes the Android Advertising ID (<code>AD_ID</code>) permission.</li>
+    </ul>
+
+    <h2>5. Permissions Used</h2>
+    <ul>
+      <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Used exclusively to connect to user-configured Git remotes, verify optional GitHub tokens, and fetch optional Gravatar avatars.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>H-Git is a software development tool not directed at children under 13. Because H-Git collects no personal data, we do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>Any updates to this Privacy Policy will be published on this page with an updated Effective Date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>For privacy questions or support requests, contact Hexsoft at <a href="mailto:hexsoft.support@gmail.com">hexsoft.support@gmail.com</a>.</p>
+
+    <footer>&copy; 2026 Hexsoft. All rights reserved.</footer>
+  </main>
+</body>
+</html>
